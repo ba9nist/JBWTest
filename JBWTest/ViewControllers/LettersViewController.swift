@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LettersViewController.swift
 //  JBWTest
 //
 //  Created by ba9nist on 03.03.2018.
@@ -8,18 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LettersViewController: UIViewController {
+    @IBOutlet weak var receivedStringLabel: UILabel!
+    @IBOutlet weak var lettersTableVIew: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
 
-
+    @IBAction func receiveNewMessageButtonClicked(_ sender: UIButton) {
+    }
+    
 }
-

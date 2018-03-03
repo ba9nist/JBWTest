@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		216D09C4887BA58DF893397D /* Pods_JBWTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374ED5CA18D5D4B65270BB80 /* Pods_JBWTest.framework */; };
 		9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */; };
-		9FA59FE3204ADF3E00DAD23D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FE2204ADF3E00DAD23D /* ViewController.swift */; };
 		9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE4204ADF3E00DAD23D /* Main.storyboard */; };
 		9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */; };
 		9FA59FEB204ADF3E00DAD23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE9204ADF3E00DAD23D /* LaunchScreen.storyboard */; };
+		9FA59FF5204AE11D00DAD23D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF4204AE11D00DAD23D /* LoginViewController.swift */; };
+		9FA59FF7204AE13B00DAD23D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */; };
+		9FA59FF9204AE18200DAD23D /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF8204AE18200DAD23D /* LettersViewController.swift */; };
+		9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		374ED5CA18D5D4B65270BB80 /* Pods_JBWTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBWTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA59FDD204ADF3D00DAD23D /* JBWTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBWTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9FA59FE2204ADF3E00DAD23D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9FA59FE5204ADF3E00DAD23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FA59FEA204ADF3E00DAD23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA59FEC204ADF3E00DAD23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FA59FF4204AE11D00DAD23D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		9FA59FF8204AE18200DAD23D /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
+		9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocaleViewController.swift; sourceTree = "<group>"; };
 		ACC5DB1FDA746F3D2E11EDB6 /* Pods-JBWTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.release.xcconfig"; sourceTree = "<group>"; };
 		E41DD0B8C5FA9C6498B07824 /* Pods-JBWTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,14 +75,33 @@
 		9FA59FDF204ADF3D00DAD23D /* JBWTest */ = {
 			isa = PBXGroup;
 			children = (
+				9FA59FF3204AE10100DAD23D /* ViewControllers */,
+				9FA59FF2204AE0FA00DAD23D /* Network */,
 				9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */,
-				9FA59FE2204ADF3E00DAD23D /* ViewController.swift */,
 				9FA59FE4204ADF3E00DAD23D /* Main.storyboard */,
 				9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */,
 				9FA59FE9204ADF3E00DAD23D /* LaunchScreen.storyboard */,
 				9FA59FEC204ADF3E00DAD23D /* Info.plist */,
 			);
 			path = JBWTest;
+			sourceTree = "<group>";
+		};
+		9FA59FF2204AE0FA00DAD23D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FA59FF3204AE10100DAD23D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9FA59FF4204AE11D00DAD23D /* LoginViewController.swift */,
+				9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */,
+				9FA59FF8204AE18200DAD23D /* LettersViewController.swift */,
+				9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CC72B4AF49238367281CFD8B /* Pods */ = {
@@ -217,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FA59FE3204ADF3E00DAD23D /* ViewController.swift in Sources */,
+				9FA59FF9204AE18200DAD23D /* LettersViewController.swift in Sources */,
+				9FA59FF7204AE13B00DAD23D /* RegistrationViewController.swift in Sources */,
+				9FA59FF5204AE11D00DAD23D /* LoginViewController.swift in Sources */,
 				9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */,
+				9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
