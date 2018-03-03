@@ -16,6 +16,7 @@
 		9FA59FF7204AE13B00DAD23D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */; };
 		9FA59FF9204AE18200DAD23D /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF8204AE18200DAD23D /* LettersViewController.swift */; };
 		9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */; };
+		9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFD204AF58300DAD23D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		9FA59FF8204AE18200DAD23D /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
 		9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocaleViewController.swift; sourceTree = "<group>"; };
+		9FA59FFD204AF58300DAD23D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		ACC5DB1FDA746F3D2E11EDB6 /* Pods-JBWTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.release.xcconfig"; sourceTree = "<group>"; };
 		E41DD0B8C5FA9C6498B07824 /* Pods-JBWTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 		9FA59FDF204ADF3D00DAD23D /* JBWTest */ = {
 			isa = PBXGroup;
 			children = (
+				9FA59FFC204AF56900DAD23D /* Utils */,
 				9FA59FF3204AE10100DAD23D /* ViewControllers */,
 				9FA59FF2204AE0FA00DAD23D /* Network */,
 				9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */,
@@ -102,6 +105,14 @@
 				9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9FA59FFC204AF56900DAD23D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FA59FFD204AF58300DAD23D /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CC72B4AF49238367281CFD8B /* Pods */ = {
@@ -247,6 +258,7 @@
 				9FA59FF5204AE11D00DAD23D /* LoginViewController.swift in Sources */,
 				9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */,
 				9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */,
+				9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

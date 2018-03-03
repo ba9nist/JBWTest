@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="LoginViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
         <!--Registration View Controller-->
         <scene sceneID="dpI-qL-SPL">
             <objects>
-                <viewController id="uNQ-fp-p20" customClass="RegistrationViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uNQ-fp-p20" customClass="RegistrationViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYc-oU-AYJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,7 +262,7 @@
         <!--Select Locale View Controller-->
         <scene sceneID="bVh-Ev-sXv">
             <objects>
-                <viewController id="POb-5c-SLh" customClass="SelectLocaleViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectLocaleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="POb-5c-SLh" customClass="SelectLocaleViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sqk-Dp-cK5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -340,7 +340,7 @@
         <!--Navigation Controller-->
         <scene sceneID="XyY-hw-InU">
             <objects>
-                <navigationController id="yUR-Ta-ET2" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="UIMainNavigationController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yUR-Ta-ET2" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sii-0n-byR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -357,7 +357,7 @@
         <!--Letters View Controller-->
         <scene sceneID="QMu-85-Ykc">
             <objects>
-                <viewController id="SXy-Ef-ayv" customClass="LettersViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LettersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SXy-Ef-ayv" customClass="LettersViewController" customModule="JBWTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jjU-xV-30y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

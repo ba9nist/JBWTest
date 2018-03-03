@@ -24,9 +24,12 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func registerButtonTapped(_ sender: UIButton) {
+        let destination = UIStoryboard.init(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.registrationViewControllerID);
+        self.present(destination, animated: true, completion: nil)
     }
 
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+
     }
 }
