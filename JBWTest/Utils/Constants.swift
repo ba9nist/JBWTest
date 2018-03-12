@@ -17,4 +17,5 @@ class Constants: NSObject {
     static let navigationViewControllerID = "UIMainNavigationController"
     static let selectLocaleViewControllerID = "SelectLocaleViewController"
     static let lettersViewControllerID = "LettersViewController"
+    static let localePickerViewControllerID = "LocalePickerViewController"
 }

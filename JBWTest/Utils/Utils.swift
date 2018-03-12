@@ -16,4 +16,9 @@ class Utils: NSObject {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: email)
     }
+
+    static func getLanguageBy(localeIdentifier: String) -> String {
+        let language = NSLocale(localeIdentifier: localeIdentifier).localizedString(forLocaleIdentifier: localeIdentifier)
+        return language.count == 0 ? localeIdentifier : language
+    }
 }

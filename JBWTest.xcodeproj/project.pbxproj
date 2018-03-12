@@ -18,6 +18,10 @@
 		9F0B2CD9205694C30035C607 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD8205694C30035C607 /* BaseResponseModel.swift */; };
 		9F0B2CDD205697750035C607 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CDC205697750035C607 /* UserModel.swift */; };
 		9F0B2CE22056BA270035C607 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE12056BA270035C607 /* BaseViewController.swift */; };
+		9F0B2CE52056C3E80035C607 /* LocalePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE42056C3E80035C607 /* LocalePickerViewController.swift */; };
+		9F0B2CE72056D6CF0035C607 /* LoadMesssage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE62056D6CF0035C607 /* LoadMesssage.swift */; };
+		9F0B2CEB2056EC5E0035C607 /* LettersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */; };
+		9F0B2CEC2056EC5E0035C607 /* LettersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */; };
 		9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */; };
 		9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE4204ADF3E00DAD23D /* Main.storyboard */; };
 		9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */; };
@@ -50,6 +54,10 @@
 		9F0B2CD8205694C30035C607 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
 		9F0B2CDC205697750035C607 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9F0B2CE12056BA270035C607 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9F0B2CE42056C3E80035C607 /* LocalePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalePickerViewController.swift; sourceTree = "<group>"; };
+		9F0B2CE62056D6CF0035C607 /* LoadMesssage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMesssage.swift; sourceTree = "<group>"; };
+		9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersTableViewCell.swift; sourceTree = "<group>"; };
+		9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LettersTableViewCell.xib; sourceTree = "<group>"; };
 		9FA59FDD204ADF3D00DAD23D /* JBWTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBWTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA59FE5204ADF3E00DAD23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +128,25 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		9F0B2CE32056C3C30035C607 /* SelectLocaleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */,
+				9F0B2CE42056C3E80035C607 /* LocalePickerViewController.swift */,
+			);
+			path = SelectLocaleViewController;
+			sourceTree = "<group>";
+		};
+		9F0B2CE82056EC400035C607 /* LettersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9FA59FF8204AE18200DAD23D /* LettersViewController.swift */,
+				9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */,
+				9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */,
+			);
+			path = LettersViewController;
+			sourceTree = "<group>";
+		};
 		9F0FF13A204C51A800D2EE1C /* Request */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,10 +215,10 @@
 		9FA59FF3204AE10100DAD23D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9F0B2CE82056EC400035C607 /* LettersViewController */,
+				9F0B2CE32056C3C30035C607 /* SelectLocaleViewController */,
 				9FA59FF4204AE11D00DAD23D /* LoginViewController.swift */,
 				9FA59FF6204AE13B00DAD23D /* RegistrationViewController.swift */,
-				9FA59FF8204AE18200DAD23D /* LettersViewController.swift */,
-				9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */,
 				9F0B2CE12056BA270035C607 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
@@ -239,6 +266,7 @@
 			children = (
 				9FD567B120554CEF0018C161 /* RegisterUser.swift */,
 				9F0B2CC920568F630035C607 /* AuthUser.swift */,
+				9F0B2CE62056D6CF0035C607 /* LoadMesssage.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -326,6 +354,7 @@
 				9FA59FEB204ADF3E00DAD23D /* LaunchScreen.storyboard in Resources */,
 				9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */,
 				9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */,
+				9F0B2CEC2056EC5E0035C607 /* LettersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +426,7 @@
 				9FA59FF7204AE13B00DAD23D /* RegistrationViewController.swift in Sources */,
 				9FA59FF5204AE11D00DAD23D /* LoginViewController.swift in Sources */,
 				9F0B2CCF2056909B0035C607 /* LoginRequestModel.swift in Sources */,
+				9F0B2CE72056D6CF0035C607 /* LoadMesssage.swift in Sources */,
 				9F0B2CDD205697750035C607 /* UserModel.swift in Sources */,
 				9FA5A007204AFE3200DAD23D /* BaseRequestModel.swift in Sources */,
 				9FA5A000204AF84800DAD23D /* Utils.swift in Sources */,
@@ -408,6 +438,8 @@
 				9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */,
 				9FD567B220554CEF0018C161 /* RegisterUser.swift in Sources */,
 				9FEF70CA205171A600963057 /* ValidationError.swift in Sources */,
+				9F0B2CEB2056EC5E0035C607 /* LettersTableViewCell.swift in Sources */,
+				9F0B2CE52056C3E80035C607 /* LocalePickerViewController.swift in Sources */,
 				9F0B2CD7205694080035C607 /* GetTextResponseModel.swift in Sources */,
 				9FA5A005204AFCDB00DAD23D /* RegisterRequestModel.swift in Sources */,
 				9F0B2CE22056BA270035C607 /* BaseViewController.swift in Sources */,
