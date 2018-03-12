@@ -13,7 +13,7 @@ class BaseRequestModel: NSObject {
     let baseURL = "https://apiecho.cf/api/"
     let url: String
     let method: HTTPMethod
-    let headers: HTTPHeaders
+    var headers: HTTPHeaders
     let encoding: ParameterEncoding
 
     init(apiMethod: String, method: HTTPMethod) {
@@ -28,5 +28,9 @@ class BaseRequestModel: NSObject {
 
     func getParameters() -> Parameters? {
         return nil
+    }
+
+    func setAccessToken(token: String) {
+        headers["Authorization"] = "Bearer \(token)"
     }
 }

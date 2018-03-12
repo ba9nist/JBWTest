@@ -9,8 +9,12 @@
 import UIKit
 
 class GetTextRequestModel: BaseRequestModel {
-    init() {
+    let locale = ""
+
+    init(accessToken: String, locale: String) {
         super.init(apiMethod: "get/text", method: .get)
-    }
+        setAccessToken(token: accessToken)
+        headers["Locale"] = locale
+     }
 
 }

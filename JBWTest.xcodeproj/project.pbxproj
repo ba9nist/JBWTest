@@ -20,8 +20,9 @@
 		9F0B2CE22056BA270035C607 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE12056BA270035C607 /* BaseViewController.swift */; };
 		9F0B2CE52056C3E80035C607 /* LocalePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE42056C3E80035C607 /* LocalePickerViewController.swift */; };
 		9F0B2CE72056D6CF0035C607 /* LoadMesssage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE62056D6CF0035C607 /* LoadMesssage.swift */; };
-		9F0B2CEB2056EC5E0035C607 /* LettersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */; };
-		9F0B2CEC2056EC5E0035C607 /* LettersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */; };
+		9F0D0F1D205705F6005310BA /* LettersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D0F1B205705F6005310BA /* LettersTableViewCell.swift */; };
+		9F0D0F1E205705F6005310BA /* LettersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F0D0F1C205705F6005310BA /* LettersTableViewCell.xib */; };
+		9F0D0F2020570F5D005310BA /* UnauthorizedError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0D0F1F20570F5D005310BA /* UnauthorizedError.swift */; };
 		9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */; };
 		9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE4204ADF3E00DAD23D /* Main.storyboard */; };
 		9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */; };
@@ -56,8 +57,9 @@
 		9F0B2CE12056BA270035C607 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9F0B2CE42056C3E80035C607 /* LocalePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalePickerViewController.swift; sourceTree = "<group>"; };
 		9F0B2CE62056D6CF0035C607 /* LoadMesssage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadMesssage.swift; sourceTree = "<group>"; };
-		9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersTableViewCell.swift; sourceTree = "<group>"; };
-		9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LettersTableViewCell.xib; sourceTree = "<group>"; };
+		9F0D0F1B205705F6005310BA /* LettersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersTableViewCell.swift; sourceTree = "<group>"; };
+		9F0D0F1C205705F6005310BA /* LettersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LettersTableViewCell.xib; sourceTree = "<group>"; };
+		9F0D0F1F20570F5D005310BA /* UnauthorizedError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnauthorizedError.swift; sourceTree = "<group>"; };
 		9FA59FDD204ADF3D00DAD23D /* JBWTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBWTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA59FE5204ADF3E00DAD23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,8 +143,8 @@
 			isa = PBXGroup;
 			children = (
 				9FA59FF8204AE18200DAD23D /* LettersViewController.swift */,
-				9F0B2CE92056EC5E0035C607 /* LettersTableViewCell.swift */,
-				9F0B2CEA2056EC5E0035C607 /* LettersTableViewCell.xib */,
+				9F0D0F1B205705F6005310BA /* LettersTableViewCell.swift */,
+				9F0D0F1C205705F6005310BA /* LettersTableViewCell.xib */,
 			);
 			path = LettersViewController;
 			sourceTree = "<group>";
@@ -276,6 +278,7 @@
 			children = (
 				9FEF70C72051716E00963057 /* NetworkError.swift */,
 				9FEF70C9205171A600963057 /* ValidationError.swift */,
+				9F0D0F1F20570F5D005310BA /* UnauthorizedError.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -354,7 +357,7 @@
 				9FA59FEB204ADF3E00DAD23D /* LaunchScreen.storyboard in Resources */,
 				9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */,
 				9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */,
-				9F0B2CEC2056EC5E0035C607 /* LettersTableViewCell.xib in Resources */,
+				9F0D0F1E205705F6005310BA /* LettersTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,12 +436,13 @@
 				9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */,
 				9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */,
 				9F0B2CD32056920A0035C607 /* GetTextRequestModel.swift in Sources */,
+				9F0D0F2020570F5D005310BA /* UnauthorizedError.swift in Sources */,
 				9FEF70C82051716E00963057 /* NetworkError.swift in Sources */,
 				9FD567AE205520C60018C161 /* HTTPClient.swift in Sources */,
 				9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */,
 				9FD567B220554CEF0018C161 /* RegisterUser.swift in Sources */,
 				9FEF70CA205171A600963057 /* ValidationError.swift in Sources */,
-				9F0B2CEB2056EC5E0035C607 /* LettersTableViewCell.swift in Sources */,
+				9F0D0F1D205705F6005310BA /* LettersTableViewCell.swift in Sources */,
 				9F0B2CE52056C3E80035C607 /* LocalePickerViewController.swift in Sources */,
 				9F0B2CD7205694080035C607 /* GetTextResponseModel.swift in Sources */,
 				9FA5A005204AFCDB00DAD23D /* RegisterRequestModel.swift in Sources */,

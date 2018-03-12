@@ -18,12 +18,9 @@ class SelectLocaleViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "Please select locale"
+        loadLocale()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-
-    }
 
     @IBAction func selectLocaleButtonClicked(_ sender: UIButton) {
         let vc = UIStoryboard.init(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.localePickerViewControllerID) as! LocalePickerViewController
@@ -35,15 +32,17 @@ class SelectLocaleViewController: BaseViewController {
     @IBAction func receiveMessageButtonClicked(_ sender: UIButton) {
         let vc = UIStoryboard.init(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.lettersViewControllerID) as! LettersViewController
         vc.locale = locale
-        navigationController?.present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
 
-    func localLocale() {
+    func loadLocale() {
         let defaults = UserDefaults.standard
-        locale = defaults.object(forKey: localeKey) as! String
-        if locale == nil {
-            locale = "en_US"
+        if let locale = defaults.object(forKey: localeKey) as? String {
+            self.locale = locale
+        } else {
+            self.locale = "en_US"
         }
+        self.selectedLocaleLabel.text = Utils.getLanguageBy(localeIdentifier: self.locale)
     }
 
     func saveLocale() {
@@ -58,5 +57,6 @@ extension SelectLocaleViewController: LocalePickerViewControllerDelegate {
     func localeDidSelect(localeIdentifier: String) {
         self.locale = localeIdentifier
         self.selectedLocaleLabel.text = Utils.getLanguageBy(localeIdentifier: localeIdentifier)
+        saveLocale()
     }
 }
