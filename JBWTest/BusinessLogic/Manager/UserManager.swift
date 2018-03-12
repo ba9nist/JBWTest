@@ -26,8 +26,9 @@ class UserManager: NSObject {
 
 
     func loadUser() {
-        let data = defaults.object(forKey: userKey) as! Data
-        activeUser = NSKeyedUnarchiver.unarchiveObject(with: data) as? UserModel
+        if let data = defaults.object(forKey: userKey) as? Data {
+            activeUser = NSKeyedUnarchiver.unarchiveObject(with: data) as? UserModel
+        }
     }
 
     func saveUser() {
@@ -39,6 +40,13 @@ class UserManager: NSObject {
         let encodedData = NSKeyedArchiver.archivedData(withRootObject: activeUser!)
         defaults.set(encodedData, forKey: userKey)
         defaults.synchronize()
+    }
+
+    func logout() {
+        defaults.removeObject(forKey: userKey)
+        defaults.synchronize()
+
+        activeUser = nil
     }
 
 }

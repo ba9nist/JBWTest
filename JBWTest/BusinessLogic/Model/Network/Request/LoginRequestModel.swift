@@ -20,7 +20,7 @@ class LoginRequestModel: BaseRequestModel {
         self.email = email
         self.password = password
 
-        super.init(apiMethod: "/login", method: .post)
+        super.init(apiMethod: "login", method: .post)
     }
 
     override func getParameters() -> Parameters? {

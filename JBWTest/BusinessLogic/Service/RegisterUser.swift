@@ -20,16 +20,21 @@ class RegisterUser: NSObject {
         self.username = username
     }
 
-    func registerUser() -> Void {
+    func registerUser(completion: @escaping (NetworkErrorProtocol?) -> Void) {
         let model = RegisterRequestModel(username: username, email: email, password: password)
         HTTPClient.shared.sendRequest(model: model, handler: AuthenticateResponseModel()) { (response, error) in
             guard error == nil else {
-                print(error?.localizedDescription)
+                completion(error)
                 return
             }
-
             let registerHandler = response as! AuthenticateResponseModel
-            print(registerHandler.accessToken)
+
+            let user = UserModel(uid: registerHandler.uid, name: registerHandler.name, email: registerHandler.email, accessToken: registerHandler.accessToken, role: registerHandler.role, status: registerHandler.status)
+
+            UserManager.shared.activeUser = user
+
+            completion(nil)
+
         }
     }
  }

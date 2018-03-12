@@ -12,11 +12,11 @@ class BaseResponseModel: NSObject, BaseResponseModelProtocol {
     private let successKey = "success"
     private let dataKey = "data"
 
-    var success: String!
+    var success: Bool!
     var data: Any!
 
     func parseJSON(json: NSDictionary) {
-        success = json.object(forKey: successKey) as! String
+        success = json.object(forKey: successKey) as! Bool
         data = json.object(forKey: dataKey)
     }
 

@@ -32,21 +32,13 @@ class AuthenticateResponseModel: BaseResponseModel {
 
         let dictionary = data as! NSDictionary
 
-        uidString = dictionary.object(forKey: uidKey) as! Stirng
-        uid = 
+        uid = dictionary.object(forKey: uidKey) as! Int
         name = dictionary.object(forKey: nameKey) as! String
         email = dictionary.object(forKey: emailKey) as! String
         accessToken = dictionary.object(forKey: accessTokenKey) as! String
         role = dictionary.object(forKey: roleKey) as! Int
         status = dictionary.object(forKey: statusKey) as! Int
-        let cdate = dictionary.object(forKey: createAtKey) as! String
-        let udate = dictionary.object(forKey: updatedAtKey) as! String
-
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy/MM/dd"
-
-        createdDate = dateFormatter.date(from: cdate)
-        updatedDate = dateFormatter.date(from: udate)
-
+        createdDate = Date(timeIntervalSince1970: Double(dictionary.object(forKey: createAtKey) as! Int))
+        updatedDate = Date(timeIntervalSince1970: Double(dictionary.object(forKey: updatedAtKey) as! Int))
     }
 }

@@ -54,27 +54,22 @@ class RegistrationViewController: UIViewController {
             return
         }
 
-        if !validateEmail(email: email) {
+        if !Utils.validateEmail(email: email) {
             showAlert(msg: "Please check email address")
             return
         }
 
-//        let model = RegisterModel(username: name, email: email, password: password)
-
-//        ApiManager.shared.registerUser(model: model) { (result, error) in
-//
-//        }
-
         let registerUser = RegisterUser(email: email, password: password, username: name)
-        registerUser.registerUser()
+        registerUser.registerUser { (error) in
+            guard error == nil else {
+                self.showAlert(msg: error!.localizedDescription)
+                return
+            }
 
-    }
+            let destination = UIStoryboard.init(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.navigationViewControllerID)
+            self.present(destination, animated: true, completion: nil)
+        }
 
-    func validateEmail(email: String) -> (Bool) {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: email)
     }
 
     func showAlert(msg: String) {
@@ -82,6 +77,8 @@ class RegistrationViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
         present(alertController, animated: true, completion: nil)
     }
+
+
 
 }
 

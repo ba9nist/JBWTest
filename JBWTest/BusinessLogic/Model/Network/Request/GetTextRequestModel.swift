@@ -10,7 +10,7 @@ import UIKit
 
 class GetTextRequestModel: BaseRequestModel {
     init() {
-        super.init(apiMethod: "/get/text", method: .get)
+        super.init(apiMethod: "get/text", method: .get)
     }
 
 }

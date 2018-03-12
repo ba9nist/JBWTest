@@ -18,7 +18,20 @@ class AuthUser: NSObject {
         self.password = password
     }
 
-    func authUser() {
-        
+    func authUser(completion: @escaping (NetworkErrorProtocol?) -> Void) {
+        let model = LoginRequestModel(email: email, password: password)
+        HTTPClient.shared.sendRequest(model: model, handler: AuthenticateResponseModel()) { (response, error) in
+            guard error == nil else {
+                completion(error)
+                return
+            }
+
+            let authHandler = response as! AuthenticateResponseModel
+            let user = UserModel(uid: authHandler.uid, name: authHandler.name, email: authHandler.email, accessToken: authHandler.accessToken, role: authHandler.role, status: authHandler.status)
+
+            UserManager.shared.activeUser = user
+
+            completion(nil)
+        }
     }
 }

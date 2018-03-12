@@ -10,14 +10,14 @@ import UIKit
 import Alamofire
 
 class BaseRequestModel: NSObject {
-    let baseURL = "https://apiecho.cf/api"
+    let baseURL = "https://apiecho.cf/api/"
     let url: String
     let method: HTTPMethod
     let headers: HTTPHeaders
     let encoding: ParameterEncoding
 
     init(apiMethod: String, method: HTTPMethod) {
-        url = "\(baseURL)\(apiMethod)"
+        url = "\(baseURL)\(apiMethod)/"
         self.method = method
 
         encoding = JSONEncoding.default

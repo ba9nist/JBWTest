@@ -12,6 +12,6 @@ class LogoutRequestModel: BaseRequestModel {
 
 
     init() {
-        super.init(apiMethod: "/logout", method: .post)
+        super.init(apiMethod: "logout", method: .post)
     }
 }

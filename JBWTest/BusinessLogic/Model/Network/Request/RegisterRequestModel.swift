@@ -24,7 +24,7 @@ class RegisterRequestModel: BaseRequestModel {
         self.username = username
         self.password = password
 
-        super.init(apiMethod: "/signup", method: .post)
+        super.init(apiMethod: "signup", method: .post)
     }
 
     override func getParameters() -> Parameters {

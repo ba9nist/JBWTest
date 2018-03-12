@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LettersViewController: UIViewController {
+class LettersViewController: BaseViewController {
     @IBOutlet weak var receivedStringLabel: UILabel!
     @IBOutlet weak var lettersTableVIew: UITableView!
 
