@@ -16,6 +16,10 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.delegate = self
+        usernameTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
 
     }
 
@@ -25,8 +29,66 @@ class RegistrationViewController: UIViewController {
     }
     
     @IBAction func signupButtonClicked(_ sender: UIButton) {
+        let destination = UIStoryboard(name: Constants.mainStoryboard, bundle: nil).instantiateViewController(withIdentifier: Constants.loginViewControllerID)
+        present(destination, animated: true, completion: nil)
     }
     
     @IBAction func registerButtonClicked(_ sender: Any) {
+        guard let email = emailTextField.text else {
+            showAlert(msg: "Please input email address")
+            return
+        }
+
+        guard let name = usernameTextField.text else {
+            showAlert(msg: "Please enter username")
+            return
+        }
+
+        guard let password = passwordTextField.text, let confirmPassword = confirmPasswordTextField.text else {
+            showAlert(msg: "Please enter password")
+            return
+        }
+
+        if !password.elementsEqual(confirmPassword) {
+            showAlert(msg: "Entered passwords do not match")
+            return
+        }
+
+        if !validateEmail(email: email) {
+            showAlert(msg: "Please check email address")
+            return
+        }
+
+//        let model = RegisterModel(username: name, email: email, password: password)
+
+//        ApiManager.shared.registerUser(model: model) { (result, error) in
+//
+//        }
+
+        let registerUser = RegisterUser(email: email, password: password, username: name)
+        registerUser.registerUser()
+
+    }
+
+    func validateEmail(email: String) -> (Bool) {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: email)
+    }
+
+    func showAlert(msg: String) {
+        let alertController = UIAlertController(title: "Error", message: msg, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
+        present(alertController, animated: true, completion: nil)
+    }
+
+}
+
+extension RegistrationViewController: UITextFieldDelegate {
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true;
     }
 }

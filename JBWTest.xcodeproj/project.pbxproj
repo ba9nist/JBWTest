@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		216D09C4887BA58DF893397D /* Pods_JBWTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 374ED5CA18D5D4B65270BB80 /* Pods_JBWTest.framework */; };
+		9F0B2CCA20568F630035C607 /* AuthUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CC920568F630035C607 /* AuthUser.swift */; };
+		9F0B2CCD20568FEB0035C607 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CCC20568FEB0035C607 /* UserManager.swift */; };
+		9F0B2CCF2056909B0035C607 /* LoginRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CCE2056909B0035C607 /* LoginRequestModel.swift */; };
+		9F0B2CD12056916D0035C607 /* LogoutRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD02056916D0035C607 /* LogoutRequestModel.swift */; };
+		9F0B2CD32056920A0035C607 /* GetTextRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD22056920A0035C607 /* GetTextRequestModel.swift */; };
+		9F0B2CD5205692810035C607 /* AuthenticateResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD4205692810035C607 /* AuthenticateResponseModel.swift */; };
+		9F0B2CD7205694080035C607 /* GetTextResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD6205694080035C607 /* GetTextResponseModel.swift */; };
+		9F0B2CD9205694C30035C607 /* BaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CD8205694C30035C607 /* BaseResponseModel.swift */; };
+		9F0B2CDD205697750035C607 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0B2CDC205697750035C607 /* UserModel.swift */; };
 		9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */; };
 		9FA59FE6204ADF3E00DAD23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE4204ADF3E00DAD23D /* Main.storyboard */; };
 		9FA59FE8204ADF3E00DAD23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */; };
@@ -17,10 +26,29 @@
 		9FA59FF9204AE18200DAD23D /* LettersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FF8204AE18200DAD23D /* LettersViewController.swift */; };
 		9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */; };
 		9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFD204AF58300DAD23D /* Constants.swift */; };
+		9FA5A000204AF84800DAD23D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA59FFF204AF84800DAD23D /* Utils.swift */; };
+		9FA5A003204AFB8700DAD23D /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5A002204AFB8700DAD23D /* ApiManager.swift */; };
+		9FA5A005204AFCDB00DAD23D /* RegisterRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5A004204AFCDB00DAD23D /* RegisterRequestModel.swift */; };
+		9FA5A007204AFE3200DAD23D /* BaseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA5A006204AFE3200DAD23D /* BaseRequestModel.swift */; };
+		9FD567AE205520C60018C161 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD567AD205520C60018C161 /* HTTPClient.swift */; };
+		9FD567B220554CEF0018C161 /* RegisterUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD567B120554CEF0018C161 /* RegisterUser.swift */; };
+		9FEF70BC20516B6D00963057 /* BaseResponseModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF70BB20516B6D00963057 /* BaseResponseModelProtocol.swift */; };
+		9FEF70C62051715000963057 /* NetworkErrorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF70C52051715000963057 /* NetworkErrorProtocol.swift */; };
+		9FEF70C82051716E00963057 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF70C72051716E00963057 /* NetworkError.swift */; };
+		9FEF70CA205171A600963057 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEF70C9205171A600963057 /* ValidationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		374ED5CA18D5D4B65270BB80 /* Pods_JBWTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JBWTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0B2CC920568F630035C607 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		9F0B2CCC20568FEB0035C607 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		9F0B2CCE2056909B0035C607 /* LoginRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestModel.swift; sourceTree = "<group>"; };
+		9F0B2CD02056916D0035C607 /* LogoutRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequestModel.swift; sourceTree = "<group>"; };
+		9F0B2CD22056920A0035C607 /* GetTextRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTextRequestModel.swift; sourceTree = "<group>"; };
+		9F0B2CD4205692810035C607 /* AuthenticateResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateResponseModel.swift; sourceTree = "<group>"; };
+		9F0B2CD6205694080035C607 /* GetTextResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTextResponseModel.swift; sourceTree = "<group>"; };
+		9F0B2CD8205694C30035C607 /* BaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModel.swift; sourceTree = "<group>"; };
+		9F0B2CDC205697750035C607 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		9FA59FDD204ADF3D00DAD23D /* JBWTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JBWTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FA59FE5204ADF3E00DAD23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +60,16 @@
 		9FA59FF8204AE18200DAD23D /* LettersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettersViewController.swift; sourceTree = "<group>"; };
 		9FA59FFA204AF33900DAD23D /* SelectLocaleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLocaleViewController.swift; sourceTree = "<group>"; };
 		9FA59FFD204AF58300DAD23D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FA59FFF204AF84800DAD23D /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9FA5A002204AFB8700DAD23D /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		9FA5A004204AFCDB00DAD23D /* RegisterRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRequestModel.swift; sourceTree = "<group>"; };
+		9FA5A006204AFE3200DAD23D /* BaseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestModel.swift; sourceTree = "<group>"; };
+		9FD567AD205520C60018C161 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9FD567B120554CEF0018C161 /* RegisterUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUser.swift; sourceTree = "<group>"; };
+		9FEF70BB20516B6D00963057 /* BaseResponseModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponseModelProtocol.swift; sourceTree = "<group>"; };
+		9FEF70C52051715000963057 /* NetworkErrorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorProtocol.swift; sourceTree = "<group>"; };
+		9FEF70C72051716E00963057 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		9FEF70C9205171A600963057 /* ValidationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationError.swift; sourceTree = "<group>"; };
 		ACC5DB1FDA746F3D2E11EDB6 /* Pods-JBWTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.release.xcconfig"; sourceTree = "<group>"; };
 		E41DD0B8C5FA9C6498B07824 /* Pods-JBWTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JBWTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JBWTest/Pods-JBWTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +94,53 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9F0B2CCB20568FDE0035C607 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9F0B2CCC20568FEB0035C607 /* UserManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		9F0B2CDA205697500035C607 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF70C22051711300963057 /* Error */,
+				9F0FF13B204C51B700D2EE1C /* Response */,
+				9F0FF13A204C51A800D2EE1C /* Request */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9F0B2CDB205697620035C607 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				9F0B2CDC205697750035C607 /* UserModel.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		9F0FF13A204C51A800D2EE1C /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9FA5A004204AFCDB00DAD23D /* RegisterRequestModel.swift */,
+				9F0B2CCE2056909B0035C607 /* LoginRequestModel.swift */,
+				9F0B2CD02056916D0035C607 /* LogoutRequestModel.swift */,
+				9F0B2CD22056920A0035C607 /* GetTextRequestModel.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9F0FF13B204C51B700D2EE1C /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				9F0B2CD4205692810035C607 /* AuthenticateResponseModel.swift */,
+				9F0B2CD6205694080035C607 /* GetTextResponseModel.swift */,
+				9F0B2CD8205694C30035C607 /* BaseResponseModel.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		9FA59FD4204ADF3D00DAD23D = {
 			isa = PBXGroup;
 			children = (
@@ -77,9 +162,10 @@
 		9FA59FDF204ADF3D00DAD23D /* JBWTest */ = {
 			isa = PBXGroup;
 			children = (
+				9FD567AB205520700018C161 /* Core */,
 				9FA59FFC204AF56900DAD23D /* Utils */,
 				9FA59FF3204AE10100DAD23D /* ViewControllers */,
-				9FA59FF2204AE0FA00DAD23D /* Network */,
+				9FA59FF2204AE0FA00DAD23D /* BusinessLogic */,
 				9FA59FE0204ADF3D00DAD23D /* AppDelegate.swift */,
 				9FA59FE4204ADF3E00DAD23D /* Main.storyboard */,
 				9FA59FE7204ADF3E00DAD23D /* Assets.xcassets */,
@@ -89,11 +175,15 @@
 			path = JBWTest;
 			sourceTree = "<group>";
 		};
-		9FA59FF2204AE0FA00DAD23D /* Network */ = {
+		9FA59FF2204AE0FA00DAD23D /* BusinessLogic */ = {
 			isa = PBXGroup;
 			children = (
+				9F0B2CCB20568FDE0035C607 /* Manager */,
+				9FD567B020554CD50018C161 /* Service */,
+				9FA5A001204AFB7200DAD23D /* Model */,
+				9FA5A002204AFB8700DAD23D /* ApiManager.swift */,
 			);
-			path = Network;
+			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 		9FA59FF3204AE10100DAD23D /* ViewControllers */ = {
@@ -111,8 +201,55 @@
 			isa = PBXGroup;
 			children = (
 				9FA59FFD204AF58300DAD23D /* Constants.swift */,
+				9FA59FFF204AF84800DAD23D /* Utils.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9FA5A001204AFB7200DAD23D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F0B2CDB205697620035C607 /* User */,
+				9F0B2CDA205697500035C607 /* Network */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FD567AB205520700018C161 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9FD567AC205520790018C161 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9FD567AC205520790018C161 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF70C52051715000963057 /* NetworkErrorProtocol.swift */,
+				9FEF70BB20516B6D00963057 /* BaseResponseModelProtocol.swift */,
+				9FA5A006204AFE3200DAD23D /* BaseRequestModel.swift */,
+				9FD567AD205520C60018C161 /* HTTPClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9FD567B020554CD50018C161 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9FD567B120554CEF0018C161 /* RegisterUser.swift */,
+				9F0B2CC920568F630035C607 /* AuthUser.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9FEF70C22051711300963057 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				9FEF70C72051716E00963057 /* NetworkError.swift */,
+				9FEF70C9205171A600963057 /* ValidationError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 		CC72B4AF49238367281CFD8B /* Pods */ = {
@@ -253,12 +390,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FA5A003204AFB8700DAD23D /* ApiManager.swift in Sources */,
+				9F0B2CD9205694C30035C607 /* BaseResponseModel.swift in Sources */,
 				9FA59FF9204AE18200DAD23D /* LettersViewController.swift in Sources */,
+				9F0B2CCD20568FEB0035C607 /* UserManager.swift in Sources */,
+				9F0B2CD5205692810035C607 /* AuthenticateResponseModel.swift in Sources */,
 				9FA59FF7204AE13B00DAD23D /* RegistrationViewController.swift in Sources */,
 				9FA59FF5204AE11D00DAD23D /* LoginViewController.swift in Sources */,
+				9F0B2CCF2056909B0035C607 /* LoginRequestModel.swift in Sources */,
+				9F0B2CDD205697750035C607 /* UserModel.swift in Sources */,
+				9FA5A007204AFE3200DAD23D /* BaseRequestModel.swift in Sources */,
+				9FA5A000204AF84800DAD23D /* Utils.swift in Sources */,
 				9FA59FE1204ADF3E00DAD23D /* AppDelegate.swift in Sources */,
 				9FA59FFB204AF33900DAD23D /* SelectLocaleViewController.swift in Sources */,
+				9F0B2CD32056920A0035C607 /* GetTextRequestModel.swift in Sources */,
+				9FEF70C82051716E00963057 /* NetworkError.swift in Sources */,
+				9FD567AE205520C60018C161 /* HTTPClient.swift in Sources */,
 				9FA59FFE204AF58300DAD23D /* Constants.swift in Sources */,
+				9FD567B220554CEF0018C161 /* RegisterUser.swift in Sources */,
+				9FEF70CA205171A600963057 /* ValidationError.swift in Sources */,
+				9F0B2CD7205694080035C607 /* GetTextResponseModel.swift in Sources */,
+				9FA5A005204AFCDB00DAD23D /* RegisterRequestModel.swift in Sources */,
+				9F0B2CD12056916D0035C607 /* LogoutRequestModel.swift in Sources */,
+				9FEF70BC20516B6D00963057 /* BaseResponseModelProtocol.swift in Sources */,
+				9F0B2CCA20568F630035C607 /* AuthUser.swift in Sources */,
+				9FEF70C62051715000963057 /* NetworkErrorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
